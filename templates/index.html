@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My App</title>
+</head>
+<body>
+	{% for element in data["elements"] %}
+	<div style="position: absolute; left: {{ element["x"] }}px; top: {{ element["y"] }}px; width: {{ element["width"] }}px; height: {{ element["height"] }}px; border: 1px solid black;">
+		{% for text in data["text"] %}
+			{% if text["element_id"] == element["id"] %}
+			<p style="position: absolute; left: {{ text["x"] }}px; top: {{ text["y"] }}px;">{{ text["value"] }}</p>
+			{% endif %}
+		{% endfor %}
+	</div>
+	{% endfor %}
+</body>
+</html>

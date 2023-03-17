@@ -1,0 +1,32 @@
+{
+    "elements": [
+        {
+            "id": "element1",
+            "x": 100,
+            "y": 200,
+            "width": 50,
+            "height": 20
+        },
+        {
+            "id": "element2",
+            "x": 200,
+            "y": 300,
+            "width": 80,
+            "height": 40
+        }
+    ],
+    "text": [
+        {
+            "element_id": "element1",
+            "x": 110,
+            "y": 210,
+            "value": "Text 1"
+        },
+        {
+            "element_id": "element2",
+            "x": 220,
+            "y": 310,
+            "value": "Text 2"
+        }
+    ]
+}
